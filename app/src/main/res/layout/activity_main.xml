@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.mgodevelopment.eggtimer.MainActivity">
+
+    <SeekBar
+        android:id="@+id/sbTimeLeft"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_below="@+id/sbTimeLeft"
+        android:contentDescription="And Egg"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/brownegg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:text="Time Left"
+        android:textSize="48sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCountdown"/>
+
+    <Button
+        android:id="@+id/btnGo"
+        android:text="Go!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/tvCountdown"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
